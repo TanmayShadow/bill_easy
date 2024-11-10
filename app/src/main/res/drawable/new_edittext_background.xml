@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base shape with blue stroke and rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp"/>
+            <solid android:color="#FFFFFF"/> <!-- White background -->
+            <stroke android:width="2dp" android:color="#194AFF"/>
+        </shape>
+    </item>
+
+    <!-- Overlay for top-right corner to make it white -->
+    <item android:right="0dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <corners
+                android:topRightRadius="5dp"
+                android:topLeftRadius="5dp"
+                android:bottomRightRadius="5dp"/>
+            <solid android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+    <!-- Gradient overlay for the half-top corners to be white -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFFFFF"
+                android:endColor="#00FFFFFF"
+                android:angle="270"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+
+</layer-list>

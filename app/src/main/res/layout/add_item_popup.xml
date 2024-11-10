@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/item_add_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item Details"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#00A8F6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/new_item_name"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:hint="Item Name"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textColorHint="#5A5A5A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_add_text"
+        android:background="@drawable/editext_background"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/new_item_price"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:hint="Item Price"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textColorHint="#5A5A5A"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_item_name"
+        android:background="@drawable/editext_background"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

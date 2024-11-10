@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BillEasy" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+            <!-- Set color for the Action Bar -->
+            <item name="colorPrimary">#1e3b70</item>
+
+            <!-- Set color for the Status Bar -->
+            <item name="android:statusBarColor">#1e3b70</item>
+    </style>
+
+    <style name="Theme.BillEasy" parent="Base.Theme.BillEasy" />
+</resources>

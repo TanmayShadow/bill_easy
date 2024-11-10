@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginBottom="5dp">
+
+    <EditText
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.3"
+        android:background="@null"
+        android:hint="Item"
+        android:inputType="text"
+        android:maxLines="1"
+        android:minHeight="32dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item_price"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/item_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.12"
+        android:layout_weight="15"
+        android:background="@null"
+        android:hint="Price"
+        android:inputType="number"
+        android:maxLines="1"
+        android:minHeight="32dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/item_quantity"
+        app:layout_constraintStart_toEndOf="@id/item_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/item_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.12"
+        android:background="@null"
+        android:hint="Qty"
+        android:inputType="number"
+        android:maxLines="1"
+        android:minHeight="32dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/item_price"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/delete_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/delete_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item_quantity"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/save_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/save_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/delete_image"
+        android:layout_marginStart="20dp"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
